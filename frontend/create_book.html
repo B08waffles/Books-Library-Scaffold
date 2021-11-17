@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create Book</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/create_book.js" defer></script>
+    </head>
+    <body>
+        <form id="create-book-form">
+            <label for="book-title">Book Title:</label>
+            <input type="text" id="book-title" name="bookTitle">
+            <label for="original-title">Original Title:</label>
+            <input type="text" id="original-title" name="originalTitle">
+            <label for="year-of-publication">Year:</label>
+            <input type="text" id="year-of-publication" name="yearofPublication">
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre">
+            <label for="millions-sold">Millions Sold:</label>
+            <input type="text" id="millions-sold" name="millionsSold">
+            <label for="cover-image">Cover Image:</label>
+            <select id="cover-image" name="coverImagePath">
+                <option value="">Select...</option>
+            </select>
+            <label for="author">Author:</label>
+            <select name="authorID" id="author">
+                <option value="">Select...</option>
+            </select>
+            <input type="button" value="Create Book!" onclick="postCreateBook()">
+        </form>
+    </body>
+</html>
